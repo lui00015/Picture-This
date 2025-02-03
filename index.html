@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Picture This!</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
-      <h4>My Really Cool Blog Post</h4>
-    </div>
+  <body>
+    <header class="header">
+      <div class="title">
+        <h1>Picture This!</h1>
 
- <picture>
-  
-<source srcset="
-images/museum-800x800.jpg 1x,
-images/museum-1600x1600.jpg 2x,
-images/museum-2400x2400.jpg 3x
-" media="(min-width: 1600px)">
+        <h4>My Really Cool Blog Post</h4>
+      </div>
 
-<source srcset="
-images/museum-640x640.jpg 1x,
-images/museum-1280x1280.jpg 2x,
-images/museum-1920x1920.jpg 3x
-" media="(min-width: 1280px)">
+      <picture>
+        <source
+          srcset="
+            images/museum-800x800.jpg   1x,
+            images/museum-1600x1600.jpg 2x,
+            images/museum-2400x2400.jpg 3x
+          "
+          media="(min-width: 1600px)"
+        />
 
-<source srcset="
-images/museum-480x480.jpg 1x,
-images/museum-960x960.jpg 2x,
-images/museum-1440x1440.jpg 3x
-" media="(min-width: 960px)">
+        <source
+          srcset="
+            images/museum-640x640.jpg   1x,
+            images/museum-1280x1280.jpg 2x,
+            images/museum-1920x1920.jpg 3x
+          "
+          media="(min-width: 1280px)"
+        />
 
-    <source srcset="
-      images/museum-320w.jpg 1x,
-      images/museum-640w.jpg 2x,
-      images/museum-960w.jpg 3x
-      " media="(max-width: 320px)">
+        <source
+          srcset="
+            images/museum-480x480.jpg   1x,
+            images/museum-960x960.jpg   2x,
+            images/museum-1440x1440.jpg 3x
+          "
+          media="(min-width: 960px)"
+        />
 
-      <source srcset="
-      images/museum-480w.jpg 1x,
-      images/museum-960w.jpg 2x,
-      images/museum-1440w.jpg 3x
-      " media="(min-width: 320px) and (max-width: 480px)">
+        <source
+          srcset="
+            images/museum-320w.jpg 1x,
+            images/museum-640w.jpg 2x,
+            images/museum-960w.jpg 3x
+          "
+          media="(max-width: 320px)"
+        />
 
-    <source srcset="
-    images/museum-720w.jpg 1x,
-    images/museum-1440w.jpg 2x,
-    images/museum-2160w.jpg 3x
-  " media="(min-width: 480px) and (max-width: 720px)">
+        <source
+          srcset="
+            images/museum-480w.jpg  1x,
+            images/museum-960w.jpg  2x,
+            images/museum-1440w.jpg 3x
+          "
+          media="(min-width: 320px) and (max-width: 480px)"
+        />
 
-  <source srcset="
-  images/museum-960w.jpg 1x,
-  images/museum-1920w.jpg 2x,
-  images/museum-2880w.jpg 3x
-" media="(min-width: 720px) and (max-width: 960px)"> -->
+        <source
+          srcset="
+            images/museum-720w.jpg  1x,
+            images/museum-1440w.jpg 2x,
+            images/museum-2160w.jpg 3x
+          "
+          media="(min-width: 480px) and (max-width: 720px)"
+        />
 
-<img src="images/museum.jpg" alt="placeholder">
+        <source
+          srcset="
+            images/museum-960w.jpg  1x,
+            images/museum-1920w.jpg 2x,
+            images/museum-2880w.jpg 3x
+          "
+          media="(min-width: 720px) and (max-width: 960px)"
+        />
 
-    </picture>
-  </header>
-</body>
-
+        <img src="images/museum.jpg" alt="placeholder" />
+      </picture>
+    </header>
+  </body>
 </html>
